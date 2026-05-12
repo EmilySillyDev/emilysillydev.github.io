@@ -58,6 +58,9 @@ a {
 
 .home {
     height: 28rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Navbar */
