@@ -4,8 +4,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="assets/style.css">
-        <!-- intel one mono font, assets/fonts/ -->
         <link rel="preload" href="/assets/fonts/IntelOneMono.ttf" as="font" type="font/ttf" crossorigin>
+        <script src="/assets/main.js" defer></script>
         <title>Emily's Portfolio</title>
     </head>
 
@@ -19,30 +19,58 @@
             <div class="container seperator title-sep"></div>
 
             <div class="navbar">
-                <a class="navbar-item navbar-selected">
+                <a id="navbar-home" class="navbar-item" type="button" onclick="setPage('home')">
                     <p>Home</p>
                 </a>
 
-                <a class="navbar-item">
+                <a id="navbar-projects" class="navbar-item" type="button" onclick="setPage('projects')">
                     <p>Projects</p>
                 </a>
 
-                <a class="navbar-item">
+                <a id="navbar-socials" class="navbar-item" type="button" onclick="setPage('socials')">
                     <p>Socials</p>
                 </a>
             </div>
 
             <div class="container seperator navbar-sep"></div>
 
-            <div class="container home">
-                <h2>Home - About Me</h2>
+            <div class="container page-content home">
+                <h2>About Me</h2>
                 <div class="inner-seperator"></div>
-                <p>I am a software developer based in the South West of England, studying at University of Plymouth.</p>
+                <p>
+                    I am a software developer based in the South West of England, studying at University of Plymouth.
+                </p>
             </div>
             
-            <div class="container projects">
+            <div class="container page-content projects">
                 <h2>Projects</h2>
                 <div class="inner-seperator"></div>
+                <p>
+                    I have worked on a variety of projects, including web development, game development, and software engineering. 
+                    Some of my notable projects include:
+            </div>
+
+            <div class="container page-content projects">
+                <a class="project-title-link" href="https://www.roblox.com/games/99342262733194/Randomizer-Redux"><h2>Randomizer: Redux</h2></a>
+                <div class="inner-seperator"></div>
+                <div class="project-container">
+                    <div class="project-description">
+                        <p>
+                            A Roblox shooter game, a modern reimagining of the original Randomizer shooter.
+                        </p>
+
+                        <p>
+                            As a lead developer for the game, it is my job to manage my staff team and implement systems to ensure an easy development process for everyone involved.
+                        </p>
+
+                        <p>
+                            I have implemented a variety of systems for the game, including a custom animation system, a custom character controller, and a custom weapon system. I have also worked on the game's UI and UX, ensuring that the game is easy to navigate and enjoyable to play.
+                        </p>
+                    </div>
+
+                    <img class="project-image" src="/assets/images/randomizer.png" alt="Randomizer: Redux game thumbnail">
+                </div>
+
             </div>
 
             <div class="footer">
