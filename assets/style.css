@@ -36,6 +36,7 @@ a {
 .container {
     width: 80rem;
     padding: 1.5rem;
+    padding-top: 0.5rem;
     background-color: rgba(128, 110, 128, 0.5);
     border-radius: 8px;
     border: 1px solid rgba(158, 154, 158, 0.764);
@@ -52,6 +53,10 @@ a {
     margin-bottom: 0.5rem;
 }
 
+p {
+    font-size: 2rem;
+}
+
 .icon {
     height: 100%;
     border-radius: 100%;
@@ -62,6 +67,7 @@ a {
     height: 8rem;
     display: flex;
     gap: 2rem;
+    width: 100%;
 }
 
 h1 {
@@ -74,7 +80,6 @@ h2 {
 
 .home {
     height: 28rem;
-    padding-top: 0.5rem;
 }
 
 /* Navbar */
@@ -146,6 +151,23 @@ h2 {
         align-items: baseline;
     }
 
+    p {
+        font-size: 1rem;
+    }
+
+    .footer {
+        font-size: 0.65rem;
+        margin-bottom: 1rem;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
     .navbar {
         display: none;
     }
@@ -156,7 +178,8 @@ h2 {
     }
 
     .title {
-        height: 8rem;
+        height: 6rem;
+        padding: 0.5rem;
     }
 
     .navbar-sep {
