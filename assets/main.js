@@ -19,6 +19,20 @@ function setPage(pageName) {
             container.style.display = "none";
         }
     }
+
+    const mobileNav = document.getElementById("mobile-nav");
+    if (mobileNav.style.display === "flex") {
+        mobileNav.style.display = "none";
+    }
+}
+
+function toggleMobileNav() {
+    const mobileNav = document.getElementById("mobile-nav");
+    if (mobileNav.style.display === "flex") {
+        mobileNav.style.display = "none";
+    } else {
+        mobileNav.style.display = "flex";
+    }
 }
 
 // Set default page

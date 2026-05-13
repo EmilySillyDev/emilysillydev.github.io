@@ -10,6 +10,26 @@
     </head>
 
     <body>
+        <div id="mobile-nav" class="mobile-nav">
+            <button id="mobile-navbar-home" class="mobile-navbar-item" type="button" onclick="setPage('home')">
+                <p>Home</p>
+            </button>
+
+            <button id="mobile-navbar-projects" class="mobile-navbar-item" type="button" onclick="setPage('projects')">
+                <p>Projects</p>
+            </button>
+
+            <button id="mobile-navbar-socials" class="mobile-navbar-item" type="button" onclick="setPage('socials')">
+                <p>Socials</p>
+            </button>
+        </div>
+
+        <button class="mobile-nav-toggle" type="button" onclick="toggleMobileNav()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+        </button>
+
         <div class="wrapper">
             <div class="title">
                 <img class="icon" src="/assets/images/emily.png">
